@@ -1,65 +1,90 @@
+/* Importação das fontes do Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&family=Patrick+Hand&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Lemonada:wght@300..700&display=swap');
 
+/* Definições de variáveis de cores */
 :root {
     --prima-es: #9D9383;
+    /* Cor primária escura */
     --prima: #BFB8AE;
+    /* Cor primária */
     --prima-cl: #E1DDD9;
+    /* Cor primária clara */
 
     --secun-es: #281F16;
+    /* Cor secundária escura */
     --secun: #594432;
+    /* Cor secundária */
     --secun-cl: #8A694E;
+    /* Cor secundária clara */
 
     --terci-es: #433427;
+    /* Cor terciária escura */
     --terci: #735943;
+    /* Cor terciária */
     --terci-cl: #A27E60;
+    /* Cor terciária clara */
 
     --quart-es: #82776A;
+    /* Cor quaternária escura */
     --quart: #A69D92;
+    /* Cor quaternária */
     --quart-cl: #C8C3BC;
+    /* Cor quaternária clara */
 
     --claro-es: #B4B2B0;
+    /* Cor clara escura */
     --claro: #D9D8D7;
+    /* Cor clara */
     --claro-cl: #FEFEFE;
+    /* Cor clara extra clara */
 
     --escur-es: #060606;
+    /* Cor escura extra escura */
     --escur: #2C2C2C;
+    /* Cor escura */
     --escur-cl: #525252;
+    /* Cor escura clara */
 
     --suces-es: #284F39;
+    /* Cor de sucesso escura */
     --suces: #42825D;
+    /* Cor de sucesso */
     --suces-cl: #61AF82;
+    /* Cor de sucesso clara */
 
     --dange-es: #732626;
+    /* Cor de perigo escura */
     --dange: #AD3939;
+    /* Cor de perigo */
     --dange-cl: #CD6666;
+    /* Cor de perigo clara */
 }
 
+/* Estilo do corpo da página */
 body {
-
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
-            /* Preto com 10% de opacidade */
-            rgba(0, 0, 0, 0.5)), url('../assets/background.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/background.jpg');
     height: 100%;
     width: 100%;
     background-position: center;
     font-family: "Inter";
 }
 
+/* Estilo para o cabeçalho personalizado */
 .custom-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0.5rem;
-    background: #594432;
+    background: var(--secun);
+    /* Cor secundária */
     color: #FFFFFF;
     opacity: 90%;
 }
 
 .custom-header span {
     font-style: italic;
-    color: #E1DDD9;
+    color: var(--prima-cl);
 }
 
 .custom-header h4 {
@@ -88,6 +113,7 @@ body {
     margin-right: 0.5rem;
 }
 
+/* Estilo para os cabeçalhos de tabelas */
 .custom-c-header {
     background-color: var(--secun) !important;
     border-color: var(--secun) !important;
@@ -97,6 +123,7 @@ body {
     background-color: var(--prima-cl);
 }
 
+/* Estilo para formulários personalizados */
 .custom-form-1,
 .custom-select-1 {
     background-color: var(--prima);
@@ -110,39 +137,38 @@ body {
     color: var(--quart);
 }
 
+/* Estilo para margens personalizadas */
 .div-custom {
     margin-bottom: 2vh;
 }
 
-.custom-c-header-2{
+/* Estilo para cabeçalhos com texto centralizado */
+.custom-c-header-2 {
     text-align: center;
 }
 
+/* Remover aparência do spinner em campos numéricos */
 .custom-form-1[type=number]::-webkit-outer-spin-button,
 .custom-form-1[type=number]::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
 
-h6, h5 {
+/* Estilo para títulos e subtítulos */
+h6,
+h5 {
     color: white;
 }
 
-.custom-th-1{
+/* Estilo para as células de tabelas */
+.custom-th-1 {
     text-transform: uppercase;
     text-align: center;
     background-color: var(--secun) !important;
     color: white !important;
 }
 
-.t-start{
-    border-top-left-radius: 10px;
-}
-
-.t-end{
-    border-top-right-radius: 10px;
-}
-
+/* Estilos responsivos para dispositivos móveis */
 @media (max-width: 768px) {
     .custom-header {
         padding: 1rem;
@@ -175,10 +201,10 @@ h6, h5 {
     }
 }
 
+/* Estilo da barra de navegação */
 .navbar {
     height: 35px;
-    background: #281F16;
-
+    background: var(--secun-es);
 }
 
 .navbar ul {
@@ -204,7 +230,8 @@ h6, h5 {
     color: var(--prima-es);
 }
 
-th{
+/* Estilo das células de tabelas (th) */
+th {
     font-weight: bold;
     font-size: 1.1rem;
 }
