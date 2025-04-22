@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&family=Patrick+Hand&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Lemonada:wght@300..700&display=swap');
+
 :root {
     --prima-es: #9D9383;
     --prima: #BFB8AE;
@@ -39,8 +41,8 @@ body {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),
             /* Preto com 10% de opacidade */
             rgba(0, 0, 0, 0.5)), url('../assets/background.jpg');
-    height: 100vh;
-    background-size: cover;
+    height: 100%;
+    width: 100%;
     background-position: center;
     font-family: "Inter";
 }
@@ -195,4 +197,14 @@ h6, h5 {
     cursor: pointer;
     font-weight: 500;
     font-size: 1rem;
+    transition: 0.3s ease;
+}
+
+.navbar ul li:hover {
+    color: var(--prima-es);
+}
+
+th{
+    font-weight: bold;
+    font-size: 1.1rem;
 }
