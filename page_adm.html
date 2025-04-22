@@ -58,7 +58,8 @@
             .carousel-control-next-icon {
                 margin-right: -30px;
             }
-            .card{
+
+            .card {
                 margin-left: 5px;
             }
         }
@@ -86,10 +87,11 @@
             color: #000000;
         }
 
-        td .btn{
+        td .btn {
             width: 100px;
             border-radius: 0px;
         }
+
         .custom-btn {
             background-color: #594432;
             color: #FFFFFF;
@@ -116,70 +118,47 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
-        .badge{
+        .badge {
             color: #42825D;
             font-size: 1rem;
         }
 
-        .badge.warning{
+        .badge.warning {
             color: #AD3939;
         }
+
         .card {
             background-color: #594432;
             color: #FFFFFF;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
-        
+
         .table thead th {
             color: #FFFFFF;
             background-color: #594432;
             padding: 10px;
         }
 
-        .row {
+        .table th,
+        .table td {
+            vertical-align: auto;
+        }
+
+        .table img {
             max-width: 100%;
-        }
-        
-        .status{
-            width: 110px !important;
+            height: auto;
+            border-radius: 0.5rem;
         }
 
-        .btn-custom{
-            background-color: #594432;
-            color: #FFFFFF;
-            transition: ease 0.3s;
+        .badge {
+            font-size: 1rem;
+            padding: 0.5em 1em;
         }
 
-        .btn-custom:hover{
-            background-color: #8A694E;
-            color: #000000;
+        table {
+            color: white;
+            background-color: antiquewhite;
         }
-
-        .modal-header{
-            background-color: #594432;
-            color: #FFFFFF;
-        }
-        .modal-body input,
-        .modal-body select{
-            background-color: #BFB8AE;
-        }
-
-        .modal-body .btn-modal{
-            background-color: #A27E60;
-            border-radius: 0px;
-            color: #FFFFFF;
-            transition: ease 0.3s;
-        }
-
-        .modal-body .btn-modal:hover{
-            background-color: #C8C3BC;
-            color: #000000;
-        }
-
-        label.form-label{
-            color: #000000;
-        }
-
     </style>
 </head>
 
@@ -258,7 +237,8 @@
                             </div>
                             <div class="mb-3">
                                 <label for="quantidade" class="form-label">Quantidade de peças:</label>
-                                <input type="number" class="form-control custom-form-1" name="quantidade" required value="1" min="1">
+                                <input type="number" class="form-control custom-form-1" name="quantidade" required
+                                    value="1" min="1">
                             </div>
                             <div class="mb-3">
                                 <label for="inicio" class="form-label">Data de aluguel:</label>
@@ -301,9 +281,11 @@
                                         <td><span class="badge">Disponível</span></td>
                                         <td>
                                             <button class="btn btn-custom btn-sm mb-3 mt-3" data-bs-toggle="modal"
-                                                data-bs-target="#modalCalculo1"><i class="bi bi-calculator"> Calcular</i></button>
+                                                data-bs-target="#modalCalculo1"><i class="bi bi-calculator">
+                                                    Calcular</i></button>
                                             <button class="btn btn-success btn-sm" data-bs-toggle="modal"
-                                                data-bs-target="#modalAlugarPeca1"><i class="bi bi-bag"> Alugar</i></button>
+                                                data-bs-target="#modalAlugarPeca1"><i class="bi bi-bag">
+                                                    Alugar</i></button>
                                         </td>
                                     </tr>
                                     <tr>
@@ -314,9 +296,11 @@
                                         <td><span class="badge">Disponível</span></td>
                                         <td>
                                             <button class="btn btn-custom btn-sm mb-3 mt-3" data-bs-toggle="modal"
-                                                data-bs-target="#modalCalculo1"><i class="bi bi-calculator"> Calcular</i></button>
+                                                data-bs-target="#modalCalculo1"><i class="bi bi-calculator">
+                                                    Calcular</i></button>
                                             <button class="btn btn-success btn-sm" data-bs-toggle="modal"
-                                                data-bs-target="#modalAlugarPeca2"><i class="bi bi-bag"> Alugar</i></button>
+                                                data-bs-target="#modalAlugarPeca2"><i class="bi bi-bag">
+                                                    Alugar</i></button>
                                         </td>
                                     </tr>
                                     <tr>
@@ -327,9 +311,11 @@
                                         <td><span class="badge">Disponível</span></td>
                                         <td>
                                             <button class="btn btn-custom btn-sm mb-3 mt-3" data-bs-toggle="modal"
-                                                data-bs-target="#modalCalculo1"><i class="bi bi-calculator"> Calcular</i></button>
+                                                data-bs-target="#modalCalculo1"><i class="bi bi-calculator">
+                                                    Calcular</i></button>
                                             <button class="btn btn-success btn-sm" data-bs-toggle="modal"
-                                                data-bs-target="#modalAlugarPeca3"><i class="bi bi-bag"> Alugar</i></button>
+                                                data-bs-target="#modalAlugarPeca3"><i class="bi bi-bag">
+                                                    Alugar</i></button>
                                         </td>
                                     </tr>
                                     <tr>
@@ -340,9 +326,11 @@
                                         <td><span class="badge warning">Indisponível</span></td>
                                         <td>
                                             <button class="btn btn-custom btn-sm mb-3 mt-3" data-bs-toggle="modal"
-                                                data-bs-target="#modalCalculo1"><i class="bi bi-calculator"> Calcular</i></button>
+                                                data-bs-target="#modalCalculo1"><i class="bi bi-calculator">
+                                                    Calcular</i></button>
                                             <button class="btn btn-success btn-sm" data-bs-toggle="modal"
-                                                data-bs-target="#modalAlugarPeca4"><i class="bi bi-bag"> Alugar</i></button>
+                                                data-bs-target="#modalAlugarPeca4"><i class="bi bi-bag">
+                                                    Alugar</i></button>
                                         </td>
                                     </tr>
                                     <tr>
@@ -353,9 +341,11 @@
                                         <td><span class="badge warning">Indisponível</span></td>
                                         <td>
                                             <button class="btn btn-custom btn-sm mb-3 mt-3" data-bs-toggle="modal"
-                                                data-bs-target="#modalCalculo1"><i class="bi bi-calculator"> Calcular</i></button>
+                                                data-bs-target="#modalCalculo1"><i class="bi bi-calculator">
+                                                    Calcular</i></button>
                                             <button class="btn btn-success btn-sm" data-bs-toggle="modal"
-                                                data-bs-target="#modalAlugarPeca5"><i class="bi bi-bag"> Alugar</i></button>
+                                                data-bs-target="#modalAlugarPeca5"><i class="bi bi-bag">
+                                                    Alugar</i></button>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -366,11 +356,12 @@
             </div>
         </div>
         </div>
-    
-    
+
+
         <!-- MODAIS -->
         <!-- MODAL PEÇA 1 -->
-        <div class="modal fade" id="modalAlugarPeca1" tabindex="-1" aria-labelledby="modalAlugarLabel1" aria-hidden="true">
+        <div class="modal fade" id="modalAlugarPeca1" tabindex="-1" aria-labelledby="modalAlugarLabel1"
+            aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content bg-light">
                     <div class="modal-header bg-brown text-white">
@@ -402,8 +393,9 @@
                 </div>
             </div>
         </div>
-    
-        <div class="modal fade" id="modalCalculo1" tabindex="-1" aria-labelledby="modalCalculoLabel1" aria-hidden="true">
+
+        <div class="modal fade" id="modalCalculo1" tabindex="-1" aria-labelledby="modalCalculoLabel1"
+            aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content bg-light">
                     <div class="modal-header bg-brown text-white">
@@ -429,7 +421,8 @@
             </div>
         </div>
         <!-- ==== MODAIS PARA PEÇA 2 ==== -->
-        <div class="modal fade" id="modalAlugarPeca2" tabindex="-1" aria-labelledby="modalAlugarLabel2" aria-hidden="true">
+        <div class="modal fade" id="modalAlugarPeca2" tabindex="-1" aria-labelledby="modalAlugarLabel2"
+            aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content bg-light">
                     <div class="modal-header bg-brown text-white">
@@ -461,7 +454,8 @@
                 </div>
             </div>
         </div>
-        <div class="modal fade" id="modalCalculo2" tabindex="-1" aria-labelledby="modalCalculoLabel2" aria-hidden="true">
+        <div class="modal fade" id="modalCalculo2" tabindex="-1" aria-labelledby="modalCalculoLabel2"
+            aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content bg-light">
                     <div class="modal-header bg-brown text-white">
@@ -486,8 +480,9 @@
                 </div>
             </div>
         </div>
-    
-        <div class="modal fade" id="modalAlugarPeca3" tabindex="-1" aria-labelledby="modalAlugarLabel3" aria-hidden="true">
+
+        <div class="modal fade" id="modalAlugarPeca3" tabindex="-1" aria-labelledby="modalAlugarLabel3"
+            aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content bg-light">
                     <div class="modal-header bg-brown text-white">
@@ -519,7 +514,8 @@
                 </div>
             </div>
         </div>
-        <div class="modal fade" id="modalCalculo3" tabindex="-1" aria-labelledby="modalCalculoLabel3" aria-hidden="true">
+        <div class="modal fade" id="modalCalculo3" tabindex="-1" aria-labelledby="modalCalculoLabel3"
+            aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content bg-light">
                     <div class="modal-header bg-brown text-white">
@@ -544,8 +540,9 @@
                 </div>
             </div>
         </div>
-    
-        <div class="modal fade" id="modalAlugarPeca4" tabindex="-1" aria-labelledby="modalAlugarLabel4" aria-hidden="true">
+
+        <div class="modal fade" id="modalAlugarPeca4" tabindex="-1" aria-labelledby="modalAlugarLabel4"
+            aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content bg-light">
                     <div class="modal-header bg-brown text-white">
@@ -577,7 +574,8 @@
                 </div>
             </div>
         </div>
-        <div class="modal fade" id="modalCalculo4" tabindex="-1" aria-labelledby="modalCalculoLabel4" aria-hidden="true">
+        <div class="modal fade" id="modalCalculo4" tabindex="-1" aria-labelledby="modalCalculoLabel4"
+            aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content bg-light">
                     <div class="modal-header bg-brown text-white">
@@ -602,8 +600,9 @@
                 </div>
             </div>
         </div>
-    
-        <div class="modal fade" id="modalAlugarPeca5" tabindex="-1" aria-labelledby="modalAlugarLabel5" aria-hidden="true">
+
+        <div class="modal fade" id="modalAlugarPeca5" tabindex="-1" aria-labelledby="modalAlugarLabel5"
+            aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content bg-light">
                     <div class="modal-header bg-brown text-white">
@@ -635,7 +634,8 @@
                 </div>
             </div>
         </div>
-        <div class="modal fade" id="modalCalculo5" tabindex="-1" aria-labelledby="modalCalculoLabel5" aria-hidden="true">
+        <div class="modal fade" id="modalCalculo5" tabindex="-1" aria-labelledby="modalCalculoLabel5"
+            aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content bg-light">
                     <div class="modal-header bg-brown text-white">
@@ -660,21 +660,23 @@
                 </div>
             </div>
         </div>
-    
-        <footer style="background-color: #2a1e15; color: #fff; padding: 20px 10px; text-align: center; width: 100%; margin-top: 30px;">
+
+        <footer
+            style="background-color: #2a1e15; color: #fff; padding: 20px 10px; text-align: center; width: 100%; margin-top: 30px;">
             <div style="margin-bottom: 10px; font-size: 22px;">
-              <a href="#" style="color: #fff; margin: 0 15px;"><i class="fab fa-instagram"></i></a>
-              <a href="#" style="color: #fff; margin: 0 15px;"><i class="fab fa-facebook-f"></i></a>
-              <a href="#" style="color: #fff; margin: 0 15px;"><i class="fab fa-whatsapp"></i></a>
+                <a href="#" style="color: #fff; margin: 0 15px;"><i class="fab fa-instagram"></i></a>
+                <a href="#" style="color: #fff; margin: 0 15px;"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" style="color: #fff; margin: 0 15px;"><i class="fab fa-whatsapp"></i></a>
             </div>
             <p style="color: #fff; font-size: 14px;">
-              La Vie Elegance © 2025 - Contato: <a href="mailto:clothes@lavieelegance.com" style="color: #fff; text-decoration: none;">clothes@lavieelegance.com</a>
+                La Vie Elegance © 2025 - Contato: <a href="mailto:clothes@lavieelegance.com"
+                    style="color: #fff; text-decoration: none;">clothes@lavieelegance.com</a>
             </p>
-          </footer>
-          
-    
-    
+        </footer>
+
+
+
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    </body>
-    
-    </html>
+</body>
+
+</html>
